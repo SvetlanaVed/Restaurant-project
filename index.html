@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Restaurant</title>
+
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <!--TOP NAVIGATION-->
+        <nav class="nav burger">
+            <span id="closebtn">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+            </span>
+
+        <ul class="nav--links burger--links hidden">
+            <li>
+                <a class="nav--link" href="#top">HOME</a>
+            </li>
+
+            <li>
+                <a class="nav--link" href="#section--1">ABOUT</a>
+            </li>
+
+            <li>
+                <a class="nav--link" href="#section--2">MENU</a>
+            </li>
+
+            <li>
+                <a class="nav--link" href="#section--3">CONTACT</a>
+            </li>
+        </ul>
+
+        </nav>
+
+        <!-- Возможно, стоит убрать класс sticky -->
+        <nav class="nav sticky">
+
+            <ul class="nav--links">
+                <li>
+                    <a class="nav--link" href="#top">HOME</a>
+                </li>
+
+                <li>
+                    <a class="nav--link" href="#section--1">ABOUT</a>
+                </li>
+
+                <li>
+                    <h1>RESTAURANT</h1>
+                </li>
+
+                <li>
+                    <a class="nav--link" href="#section--2">MENU</a>
+                </li>
+
+                <li>
+                    <a class="nav--link" href="#section--3">CONTACT</a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <div class="header-center-group">
+            <h2 class="header-text">LOREM IPSUM DOLOR SIT AMET</h2>
+            <a href="#section--2"><button id="btn-discover-menu">DISCOVER OUR MENU</button></a>
+        </div>
+
+    </header>
+
+    <div class="home--gallery">
+        <div class="img-wrapper">
+            <img class="gallery--item" src="images/pancakes.jpg" alt="pancakes photo">
+            <div class="content slide-left">American Pancakes</div>
+        </div>
+        <div class="img-wrapper">
+            <img class="gallery--item" src="images/khachapuri_1_sq.jpg" alt="khachapuri photo">
+            <div class="content slide-left">Khachapuri</div>
+        </div>
+        <div class="img-wrapper">
+            <img class="gallery--item" src="images/cheese_pancakes_2.jpg" alt="cheese pancakes photo">
+            <div class="content slide-left">Cheese Pancakes</div>
+        </div>
+        <div class="img-wrapper">
+            <img class="gallery--item" src="images/honey_cake_2.jpg" alt="honey cake photo">
+            <div class="content slide-left">Honey Cake</div>
+        </div>
+        <div class="img-wrapper">
+            <img class="gallery--item" src="images/omlette.jpg" alt="breakfast photo">
+            <div class="content slide-left">Omlettes</div>
+        </div>
+        <div class="img-wrapper">
+            <img class="gallery--item" src="images/pexels-chevanon-photography-312418.jpg" alt="coffee drink photo">
+            <div class="content slide-left">Your Favourite Drinks</div>
+        </div>
+
+    </div>
+
+    <section class="section" id="section--1">
+        
+        <div class="about-group">
+            <div class="about--text">
+                <h2 class="align-left">LOREM IPSUM DOLOR SIT AMET!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt
+                ut labore et dolore
+                magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa. Ullamcorper sit amet risus
+                nullam
+                eget felis eget nunc lobortis. Maecenas volutpat blandit aliquam etiam erat velit. Lectus arcu bibendum
+                at
+                varius vel pharetra vel.
+                </p>
+                <p> Donec ac odio tempor orci dapibus ultrices in iaculis nunc. Cras tincidunt
+                lobortis
+                feugiat vivamus at augue eget arcu. Malesuada fames ac turpis egestas maecenas pharetra convallis
+                posuere
+                morbi. Est placerat in egestas erat imperdiet sed euismod nisi porta. Morbi blandit cursus risus at
+                ultrices
+                mi tempus imperdiet. Dictum varius duis at consectetur. Elit sed vulputate mi sit amet mauris commodo
+                quis.
+                </p>
+            </div>
+
+            <div class="about--images">
+                <!-- <img src="images/cheese_pancakes_2.jpg" alt="khachapuri" class="about--image hidden-image"> -->
+                <img src="images/honey_cake_1.jpg" alt="honey cake" class="about--image">
+            </div>
+        </div>
+
+        <div class="scroll-top">
+            <a href="#top"><button class="btn-scroll-top">
+                    <i class="material-icons" id="arrow-scroll-top">keyboard_arrow_up</i>
+                </button></a>
+        </div>
+
+    </section>
+
+    <section class="section" id="section--2">
+        <div class="menu">
+            <h2>MENU</h2>
+
+            <div class="menu-icons-container">
+
+                    <svg class="icon activated" data-tab="1" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+		            <path d="M221.208,288.93c-1.86-1.861-4.44-2.93-7.07-2.93s-5.2,1.069-7.07,2.93c-1.86,1.86-2.93,4.44-2.93,7.07
+			s1.07,5.21,2.93,7.069c1.86,1.86,4.44,2.931,7.07,2.931s5.21-1.07,7.07-2.931c1.87-1.859,2.93-4.439,2.93-7.069
+			S223.078,290.79,221.208,288.93z"/>
+		            <path d="M501.808,446h-54.027c6.292-8.363,10.027-18.752,10.027-30c0-16.339-7.878-30.87-20.035-40
+			c12.156-9.13,20.035-23.661,20.035-40s-7.878-30.87-20.035-40c12.156-9.13,20.035-23.661,20.035-40s-7.878-30.87-20.035-40
+			c12.156-9.13,20.035-23.661,20.035-40c0-27.57-22.43-50-50-50H306.72c7.551-9.29,12.088-21.123,12.088-34
+			c0-26.035-18.521-47.825-43.078-52.889C279.461,28.017,289.953,20,302.289,20c5.523,0,10-4.478,10-10s-4.477-10-10-10
+			c-23.353,0-42.856,16.76-47.137,38.882C229.97,43.449,210.808,65.521,210.808,92c0,12.877,4.537,24.71,12.088,34H103.808
+			c-27.57,0-50,22.43-50,50c0,16.339,7.878,30.87,20.035,40c-12.156,9.13-20.035,23.661-20.035,40s7.878,30.87,20.035,40
+			c-12.156,9.13-20.035,23.661-20.035,40s7.878,30.87,20.035,40c-12.156,9.13-20.035,23.661-20.035,40
+			c0,11.248,3.735,21.637,10.027,30H10.192c-5.523,0-10,4.478-10,10c0,30.879,25.122,56,56,56h399.616c30.878,0,56-25.121,56-56
+			C511.808,450.478,507.331,446,501.808,446z M382.882,160.437c0.007-7.961,6.49-14.438,14.451-14.438h10.475
+			c16.542,0.001,30,13.459,30,30.001s-13.458,30-30,30H382.84L382.882,160.437z M382.782,268.544l0.04-42.544h24.986
+			c16.542,0,30,13.458,30,30s-13.458,30-30,30h-29.559C381.133,280.826,382.782,274.875,382.782,268.544z M264.179,58.016
+			c0.03,0,0.06,0.005,0.09,0.005c0.092,0,0.181-0.011,0.272-0.014c0.089-0.001,0.177-0.007,0.267-0.007c18.748,0,34,15.252,34,34
+			s-15.252,34-34,34s-34-15.252-34-34C230.808,73.463,245.722,58.354,264.179,58.016z M366.073,146
+			c-2.038,4.389-3.186,9.272-3.191,14.42l-0.051,55.323c-0.002,0.086-0.013,0.17-0.013,0.257c0,0.084,0.01,0.165,0.012,0.248
+			l-0.048,52.287c0,8.822-7.178,16-16,16c-8.822,0-16-7.178-16-16v-65.959c0-20.218-16.449-36.666-36.667-36.666
+			c-20.218,0-36.667,16.448-36.667,36.666v24.667c0,9.558-7.776,17.333-17.333,17.333s-17.333-7.775-17.333-17.333V172.5
+			c0-9.843-3.083-18.976-8.321-26.5H366.073z M73.808,176c0-16.542,13.458-30,30-30h72.475c14.612,0,26.5,11.888,26.5,26.5V206
+			h-98.975C87.266,206,73.808,192.542,73.808,176z M73.808,336c0-16.542,13.458-30,30-30h70.333c5.523,0,10-4.478,10-10
+			c0-5.522-4.477-10-10-10h-70.333c-16.542,0-30-13.458-30-30s13.458-30,30-30h98.975v1.243c0,20.586,16.748,37.333,37.333,37.333
+			c20.585,0,37.333-16.747,37.333-37.333v-24.667c0-9.189,7.477-16.666,16.667-16.666s16.667,7.477,16.667,16.666v65.959
+			c0,6.335,1.651,12.289,4.535,17.465h-59.51c-5.523,0-10,4.478-10,10c0,5.522,4.477,10,10,10h152c16.542,0,30,13.458,30,30
+			s-13.458,30-30,30h-304C87.266,366,73.808,352.542,73.808,336z M103.808,386h304c13.036,0,24.152,8.361,28.28,20h-106.28
+			c-5.523,0-10,4.478-10,10c0,5.522,4.477,10,10,10h106.28c-4.128,11.639-15.243,20-28.28,20h-304c-16.542,0-30-13.458-30-30
+			S87.266,386,103.808,386z M455.808,492H56.192c-16.382,0-30.243-10.999-34.587-26h468.791C486.051,481.001,472.19,492,455.808,492
+			z"/>
+		            <path d="M298.548,408.93c-1.86-1.86-4.44-2.93-7.07-2.93c-2.64,0-5.21,1.069-7.07,2.93c-1.87,1.86-2.93,4.44-2.93,7.07
+			s1.06,5.21,2.93,7.069c1.86,1.86,4.43,2.931,7.07,2.931c2.63,0,5.21-1.07,7.07-2.931c1.86-1.859,2.93-4.439,2.93-7.069
+			S300.408,410.79,298.548,408.93z"/>
+                    </svg>
+
+                    <svg class="icon" data-tab="2" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+		            <path d="M502,206.5h-82v-21.167c0-5.523-4.478-10-10-10H194c-5.522,0-10,4.477-10,10c0,5.523,4.478,10,10,10h206v76.666
+			c0,67.348-35.957,129.942-94.018,164H114.018C55.957,401.942,20,339.347,20,272v-76.666h67c5.522,0,10-4.477,10-10
+			c0-5.523-4.478-10-10-10H10c-5.522,0-10,4.477-10,10V272c0,37.8,10.16,74.864,29.382,107.183
+			C42.345,400.98,59.165,420.228,78.862,436H10c-5.522,0-10,4.477-10,10c0,36.393,29.607,66,66,66h312c36.393,0,66-29.607,66-66
+			c0-5.523-4.478-10-10-10h-92.862c18.129-14.516,33.812-31.983,46.302-51.667h28.227C468.785,384.333,512,341.118,512,288v-71.5
+			C512,210.977,507.523,206.5,502,206.5z M422.905,456c-4.578,20.572-22.974,36-44.905,36H66c-21.931,0-40.326-15.428-44.905-36
+			h90.244h197.322H422.905z M420,272v-5.5h32V288c0,20.034-16.299,36.333-36.333,36.333h-2.271C417.761,307.327,420,289.745,420,272
+			z M492,288c0,42.09-34.243,76.333-76.333,76.333h-17.02c3.193-6.521,6.045-13.197,8.537-20h8.483
+			C446.73,344.333,472,319.062,472,288v-31.5c0-5.523-4.478-10-10-10h-42v-20h72V288z"/>
+		            <path d="M219.549,55.343l-5.203-6.533c-7.638-9.588-7.649-22.991-0.027-32.593c3.434-4.326,2.71-10.616-1.616-14.049
+			c-4.327-3.435-10.616-2.71-14.05,1.616c-13.442,16.936-13.422,40.575,0.049,57.487l5.203,6.533
+			c9.981,12.53,9.996,30.045,0.036,42.594l-5.332,6.718c-3.434,4.326-2.71,10.616,1.616,14.049c1.839,1.459,4.032,2.168,6.21,2.168
+			c2.946,0,5.865-1.296,7.84-3.784l5.332-6.718C235.387,102.949,235.364,75.197,219.549,55.343z"/>
+		            <path d="M274.978,77.827l-5.203-6.532c-7.638-9.589-7.649-22.992-0.027-32.594c3.434-4.326,2.71-10.616-1.616-14.049
+			c-4.327-3.435-10.616-2.71-14.05,1.616c-13.442,16.936-13.422,40.575,0.049,57.488l5.203,6.533
+			c9.98,12.531,9.995,30.047,0.035,42.595l-5.331,6.717c-3.434,4.326-2.71,10.616,1.616,14.049c1.839,1.459,4.032,2.167,6.21,2.167
+			c2.946,0,5.866-1.297,7.84-3.784l5.33-6.717C290.815,125.435,290.792,97.683,274.978,77.827z"/>
+		            <path d="M164.12,77.828l-5.203-6.532c-7.638-9.588-7.649-22.992-0.028-32.594c3.434-4.326,2.71-10.616-1.616-14.05
+			c-4.327-3.434-10.616-2.708-14.05,1.616c-13.441,16.936-13.421,40.576,0.05,57.488l5.203,6.533
+			c9.98,12.531,9.995,30.047,0.036,42.594l-5.332,6.717c-3.434,4.326-2.711,10.616,1.615,14.05c1.839,1.459,4.031,2.168,6.21,2.168
+			c2.946,0,5.865-1.296,7.839-3.783l5.333-6.718C179.957,125.436,179.934,97.684,164.12,77.828z"/>
+		            <path d="M150.28,178.26c-1.86-1.86-4.44-2.93-7.07-2.93s-5.21,1.07-7.07,2.93c-1.859,1.87-2.93,4.44-2.93,7.07
+			s1.07,5.21,2.93,7.08c1.86,1.86,4.44,2.92,7.07,2.92s5.21-1.06,7.07-2.92c1.869-1.87,2.93-4.44,2.93-7.08
+			C153.21,182.7,152.149,180.12,150.28,178.26z"/>
+		            <path d="M362,262c-5.522,0-10,4.477-10,10c0,37.119-15.056,73.598-41.308,100.083c-3.888,3.922-3.859,10.254,0.063,14.142
+			c1.95,1.933,4.495,2.898,7.04,2.898c2.574-0.001,5.148-0.989,7.103-2.962C354.832,355.961,372,314.351,372,272
+			C372,266.477,367.522,262,362,262z"/>
+		            <path d="M293.885,399.225c-2.714-4.811-8.813-6.51-13.623-3.797l-0.228,0.129c-4.811,2.714-6.51,8.813-3.797,13.623
+			c1.838,3.258,5.227,5.089,8.719,5.089c1.664,0,3.352-0.417,4.904-1.292l0.228-0.129
+			C294.899,410.134,296.598,404.035,293.885,399.225z"/>
+                    </svg>
+            </div>
+
+            <div class="menu--items-container">
+                <ul class="menu--items menu--items--1 menu--items_visible">
+                        <li class="menu--item-row">
+                            <h3>CHEESE PANCAKES<div class="line-div"><div class="hr-line"></div></div>
+                            <div class="menu--item-price">10$</div></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore</p>
+                        </li>
+                        <li class="menu--item-row">
+                            <h3>AMERICAN PANCAKES<div class="line-div"><div class="hr-line"></div></div>
+                            <div class="menu--item-price">10$</div></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore</p>
+                        </li>
+                        <li class="menu--item-row">
+                            <h3>KHACHAPURI<div class="line-div"><div class="hr-line"></div></div>
+                            <div class="menu--item-price">10$</div></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore</p>
+                        </li>
+                        <li class="menu--item-row">
+                            <h3>OMLETTE<div class="line-div"><div class="hr-line"></div></div>
+                            <div class="menu--item-price">10$</div></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore</p>
+                        </li>
+
+                        <li class="menu--item-row">
+                            <h3>HONEY CAKE<div class="line-div"><div class="hr-line"></div></div>
+                            <div class="menu--item-price">10$</div></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore</p>
+                        </li>
+                </ul>
+
+                <ul class="menu--items menu--items--2 menu--items_hidden">
+                    <li class="menu--item-row">
+                        <h3>ESPRESSO<div class="line-div"><div class="hr-line"></div></div>
+                        <div class="menu--item-price">2$</div></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore</p>
+                    </li>
+                    <li class="menu--item-row">
+                        <h3>AMERICANO<div class="line-div"><div class="hr-line"></div></div>
+                        <div class="menu--item-price">2$</div></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore</p>
+                    </li>
+                    <li class="menu--item-row">
+                        <h3>LATTE<div class="line-div"><div class="hr-line"></div></div>
+                        <div class="menu--item-price">2$</div></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt
+                            ut labore et dolore</p>
+                    </li>
+                    <li class="menu--item-row">
+                        <h3>CAPPUCCINO<div class="line-div"><div class="hr-line"></div></div>
+                        <div class="menu--item-price">2$</div></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt
+                            ut labore et dolore</p>
+                    </li>
+
+                    <li class="menu--item-row">
+                        <h3>HOT RUSSIAN TEA<div class="line-div"><div class="hr-line"></div></div>
+                        <div class="menu--item-price">2$</div></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt
+                            ut labore et dolore</p>
+                    </li>
+                    <li class="menu--item-row">
+                        <h3>COLD TEA<div class="line-div"><div class="hr-line"></div></div>
+                        <div class="menu--item-price">2$</div></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt
+                            ut labore et dolore</p>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section location" id="section--3">
+        <div class="location-container">
+            <div class="contact--info">
+                <h2>OPEN</h2>
+                <ul>
+                    <li>
+                        <p><i class="material-icons">place</i>
+                            <a href="https://www.google.com.mx/maps/place/Pedro+Romero+de+Terreros+505,+c%C3%B3digo+2,+Col+del+Valle+Nte,+Benito+Ju%C3%A1rez,+03103+Del+Valle+Nte,+CDMX/@19.3949702,-99.1697945,17z/data=!3m1!4b1!4m5!3m4!1s0x85d1ff0d4af009bb:0x3b921ffbc3493e21!8m2!3d19.3949702!4d-99.1676058?hl=ru&authuser=0"> Pedro Romero de Terreros 505, 03103 Ciudad de México</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p><i class="material-icons">directions_subway</i>
+                            Chilpancingo
+                        </p>
+                    </li>
+                    <li>
+                        <p><i class="material-icons">schedule</i>
+                            Open daily 9 am to 4 pm
+                        </p>
+                    </li>
+                </ul>
+
+                <h2>CONTACT US</h2>
+                <ul>
+                    <li>
+                        <p><i class="material-icons">email</i>
+                            info@restaurante.co.mx
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="map"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.403366900145!2d-99.16979448514363!3d19.39497018690564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff0d4af009bb%3A0x3b921ffbc3493e21!2sPedro%20Romero%20de%20Terreros%20505%2C%20c%C3%B3digo%202%2C%20Col%20del%20Valle%20Nte%2C%20Benito%20Ju%C3%A1rez%2C%2003103%20Del%20Valle%20Nte%2C%20CDMX!5e0!3m2!1sru!2smx!4v1647640062909!5m2!1sru!2smx"
+                    width="700" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer--partners">
+            <h3>OUR PARTNERS</h3>
+            <ul>
+                <li> <a href="https://www.facebook.com/buenasmigasdf/">Buenas Migas</a></li>
+                <li> <a href="https://www.facebook.com/bormed2/">Boris Delicatessen - Russian Food
+                        Store</a></li>
+            </ul>
+            <!-- <ul class="footer--nav">
+            <li class="footer-nav--item"></li>
+            <li class="footer-nav--item"></li>
+        </ul> -->
+        </div>
+
+        <p class="footer--copyright">©2022. All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
